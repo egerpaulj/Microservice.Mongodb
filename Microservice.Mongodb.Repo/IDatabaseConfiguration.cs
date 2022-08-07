@@ -21,4 +21,10 @@ namespace Microservice.Mongodb.Repo
         string DatabaseName { get; }
         string DocumentName { get; }
     }
+
+    public class DatabaseConfiguration : IDatabaseConfiguration
+    {
+        public string DatabaseName { get; set;}
+        public string DocumentName { get; set;}
+    }
 }
